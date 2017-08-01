@@ -16,7 +16,7 @@ router.post('/', function(req, res) {
 
 
     request({
-        url: "http://ADSHOST:ADSPORT/score",
+        url: "http://ADSHOST:8888/score",
         method: "POST",
         headers: {
             "Content-Type": "application/json",

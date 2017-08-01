@@ -1,5 +1,8 @@
 #! /bin/bash
 
+
+#TODO: download the image
+
 # To get the latest and greatest version, install Docker from the official Docker repository
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
@@ -8,8 +11,6 @@ apt-cache policy docker-ce
 sudo apt-get install -y docker-ce
 # check the status:
 #sudo systemctl status docker
-
-#TODO: download the image
 cd ~
 sudo docker load < adtestapp.tar
 sudo docker run -d -p 8888:5001 alicefengacr.azurecr.io/adtestapp

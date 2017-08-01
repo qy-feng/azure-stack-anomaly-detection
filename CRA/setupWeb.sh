@@ -1,5 +1,10 @@
 #! /bin/bash
 
+# Usage:
+# bash setupWeb.sh <IP_ADDRESS_OF_ADS>
+# Sample:
+# bash setupWeb.sh 192.168.102.16
+#
 
 sudo apt-get -y update
 sudo apt-get -y install nodejs
@@ -11,8 +16,7 @@ git clone https://github.com/yingqunpku/azure-stack-anomaly-detection.git
 cd azure-stack-anomaly-detection/CRA/WebApp/routes/
 
 #TODO: parameterize the following two params
-sudo sed -i "s/ADSHOST/192.168.102.16/g" score.js
-sudo sed -i "s/ADSPORT/8888/g" score.js
+sudo sed -i "s/ADSHOST/$1/g" score.js
 cd ~/azure-stack-anomaly-detection/CRA/WebApp
 sudo npm install -g supervisor
 npm install
