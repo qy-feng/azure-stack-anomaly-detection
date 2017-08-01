@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env nodejs
+﻿#!/usr/bin/env node
 
 var debug = require('debug')('creditriskassessment');
 var app = require('../app');
