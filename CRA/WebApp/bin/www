@@ -1,4 +1,6 @@
-﻿var debug = require('debug')('creditriskassessment');
+﻿#!/usr/bin/env nodejs
+
+var debug = require('debug')('creditriskassessment');
 var app = require('../app');
 
 app.set('port', process.env.PORT || 8080);
