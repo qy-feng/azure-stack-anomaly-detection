@@ -11,7 +11,7 @@ router.post('/', function(req, res) {
     params.push(1);
     params.push(0);
     params.push(0);
-    params.push(1);
+    params.push(0);
     console.log(params);
 
 

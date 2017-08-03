@@ -23,12 +23,12 @@
 						<option value="1"> &lt; 0 DM </option>
 						<option value="2"> [0, 200) DM </option>
 						<option value="3"> &gt;= 200 DM </option>
-						<option value="4"> No checking account </option>
+						<option value="4" selected> No checking account </option>
 						</select></div>
                     </div>
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A2">Duration</label>
-                        <div class="col-sm-3"><input type="number" class="form-control" name="A2" id="A2" required placeholder="in months"></div>
+                        <div class="col-sm-3"><input type="number" class="form-control" name="A2" id="A2" required placeholder="in months" value="36"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -39,17 +39,33 @@
 						<option value="1"> All credits at this bank paid back duly </option>
 						<option value="2"> Existing credits paid back duly till now </option>
 						<option value="3"> Delay in paying off in the past </option>
-						<option value="4"> Critical account / other credits existing (not at this bank)</option>
+						<option value="4" selected> Critical account / other credits existing (not at this bank)</option>
 						</select></div>
                     </div>
-                    <div class="col-md-6 form-group form-group-lg"><label class="col-sm-3 control-label" for="A4">Purpose</label>
-                        <div class="col-sm-8"><select class="form-control" name="A4" id="A4">
+                    <div class="col-md-6 form-group form-group-lg">
+                        <label class="col-sm-3 control-label" for="A4">Credit amount</label>
+                        <div class="col-sm-3"><input type="text" class="form-control" name="A4" id="A4" required value="57"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group form-group-lg">
+                        <label class="col-sm-3 control-label" for="A5">Savings account</label>
+                        <div class="col-sm-8"><select class="form-control" name="A5" id="A5">
+						<option value="1"> &lt; 100 DM </option>
+						<option value="2"> [100, 500) DM </option>
+						<option value="3"> [500, 1000) DM </option>
+						<option value="4" selected> &gt;= 1000 DM </option>
+						<option value="5"> Unknown / no savings account </option>
+						</select></div>
+                    </div>
+                    <div class="col-md-6 form-group form-group-lg"><label class="col-sm-3 control-label" for="A6">Purpose</label>
+                        <div class="col-sm-8"><select class="form-control" name="A6" id="A6">
 						<option value="0"> car (new) </option>
 						<option value="1"> car (used) </option>
 						<option value="2"> furniture/equipment </option>
 						<option value="3"> radio/television </option>
 						<option value="4"> domestic appliances</option>
-						<option value="5"> repairs </option>
+						<option value="5" selected> repairs </option>
 						<option value="6"> education </option>
 						<option value="7"> (vacation - does not exist?) </option>
 						<option value="8"> retraining </option>
@@ -60,34 +76,18 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group form-group-lg">
-                        <label class="col-sm-3 control-label" for="A5">Credit amount</label>
-                        <div class="col-sm-3"><input type="text" class="form-control" name="A5" id="A5" required></div>
-                    </div>
-                    <div class="col-md-6 form-group form-group-lg">
-                        <label class="col-sm-3 control-label" for="A6">Savings account</label>
-                        <div class="col-sm-8"><select class="form-control" name="A6" id="A6">
-						<option value="1"> &lt; 100 DM </option>
-						<option value="2"> [100, 500) DM </option>
-						<option value="3"> [500, 1000) DM </option>
-						<option value="4"> &gt;= 1000 DM </option>
-						<option value="5"> Unknown / no savings account </option>
-						</select></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A7">Present employment duration</label>
                         <div class="col-sm-8"><select class="form-control" name="A7" id="A7">
 						<option value="1"> unemployed </option>
 						<option value="2"> &lt; 1 year </option>
-						<option value="3"> [1,4) years </option>
+						<option value="3" selected> [1,4) years </option>
 						<option value="4"> [4,7) years </option>
 						<option value="5"> &gt;= 7 years </option>
 						</select></div>
                     </div>
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A8">Installment rate</label>
-                        <div class="col-sm-5"><input type="text" class="form-control" name="A8" id="A8" required placeholder="in percentage of disposable income"></div>
+                        <div class="col-sm-5"><input type="text" class="form-control" name="A8" id="A8" required placeholder="in percentage of disposable income" value="2"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -96,31 +96,26 @@
                         <div class="col-sm-8"><select class="form-control" name="A9" id="A9">
 						<option value="1"> male   : divorced/separated </option>
 						<option value="2"> female : divorced/separated/married </option>
-						<option value="3"> male   : single </option>
+						<option value="3" selected> male   : single </option>
 						<option value="4"> male   : married/widowed </option>
 						<option value="5"> female : single </option>
 						</select></div>
                     </div>
                     <div class="col-md-6 form-group form-group-lg">
-                        <label class="col-sm-3 control-label" for="A10">Debtors / guarantors</label>
-                        <div class="col-sm-8"><select class="form-control" name="A10" id="A10">
-						<option value="1"> none </option>
-						<option value="2"> co-applicant </option>
-						<option value="3"> guarantor </option>
-						</select></div>
-
+                        <label class="col-sm-3 control-label" for="A10">Age</label>
+                        <div class="col-sm-2"><input type="number" class="form-control" name="A10" id="A10" required placeholder="in years" value="38"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A11">Present residence duration</label>
-                        <div class="col-sm-3"><input type="text" class="form-control" name="A11" id="A11" required></div>
+                        <div class="col-sm-3"><input type="text" class="form-control" name="A11" id="A11" required value="3"></div>
                     </div>
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A12">Property</label>
                         <div class="col-sm-8"><select class="form-control" name="A12" id="A12">
 						<option value="1"> real estate </option>
-						<option value="2"> if no real estate, building society savings agreement / life insurance </option>
+						<option value="2" selected> if no real estate, building society savings agreement / life insurance </option>
 						<option value="3"> if not two of the above, car or other, not in "Savings account/bonds" </option>
 						<option value="4"> unknown / no property </option>
 						</select></div>
@@ -129,14 +124,18 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group form-group-lg">
-                        <label class="col-sm-3 control-label" for="A13">Age</label>
-                        <div class="col-sm-2"><input type="number" class="form-control" name="A13" id="A13" required placeholder="in years"></div>
+                        <label class="col-sm-3 control-label" for="A13">Debtors / guarantors</label>
+                        <div class="col-sm-8"><select class="form-control" name="A13" id="A13">
+						<option value="1" selected> none </option>
+						<option value="2"> co-applicant </option>
+						<option value="3"> guarantor </option>
+						</select></div>
                     </div>
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A14">Other installment plans</label>
                         <div class="col-sm-8"><select class="form-control" name="A14" id="A14">
 						<option value="1"> bank </option>
-						<option value="2"> stores </option>
+						<option value="2" selected> stores </option>
 						<option value="3"> none </option>
 						</select></div>
                     </div>
@@ -145,21 +144,21 @@
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A15">Housing</label>
                         <div class="col-sm-8"><select class="form-control" name="A15" id="A15">
-						<option value="1"> rent </option>
+						<option value="1" selected> rent </option>
 						<option value="2"> own </option>
 						<option value="3"> for free </option>
 						</select></div>
                     </div>
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A16">Existing credits number</label>
-                        <div class="col-sm-2"><input type="number" class="form-control" name="A16" id="A16" required></div>
+                        <div class="col-sm-2"><input type="number" class="form-control" name="A16" id="A16" required value="0"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A17">Job</label>
                         <div class="col-sm-8"><select class="form-control" name="A17" id="A17">
-						<option value="1"> unemployed/ unskilled  - non-resident </option>
+						<option value="1" selected> unemployed/ unskilled  - non-resident </option>
 						<option value="2"> unskilled - resident </option>
 						<option value="3"> skilled employee / official </option>
 						<option value="4"> management / self-employed / highly qualified employee / officer </option>
@@ -167,22 +166,22 @@
                     </div>
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A18">Possible guarantor number</label>
-                        <div class="col-sm-3"><input type="number" class="form-control" name="A18" id="A18" required></div>
+                        <div class="col-sm-3"><input type="number" class="form-control" name="A18" id="A18" required value="1"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A19">Telephone</label>
                         <div class="col-sm-8"><select class="form-control" name="A19" id="A19">
-						<option value="1"> none </option>
-						<option value="2"> yes, registered under the customers name </option>
+						<option value="0"> none </option>
+						<option value="1"> yes, registered under the customers name </option>
 						</select></div>
                     </div>
                     <div class="col-md-6 form-group form-group-lg">
                         <label class="col-sm-3 control-label" for="A20">Foreign worker</label>
                         <div class="col-sm-8"><select class="form-control" name="A20" id="A20">
-						<option value="1"> yes </option>
-						<option value="2"> no </option>
+						<option value="0"> yes </option>
+						<option value="1"> no </option>
 						</select></div>
                     </div>
                 </div>
