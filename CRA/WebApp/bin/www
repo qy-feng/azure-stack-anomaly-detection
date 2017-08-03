@@ -1,5 +1,6 @@
 ﻿#!/usr/bin/env node
-var debug = require('debug')('RunOnAzure');
+
+var debug = require('debug')('creditriskassessment');
 var app = require('../app');
 
 app.set('port', process.env.PORT || 8080);

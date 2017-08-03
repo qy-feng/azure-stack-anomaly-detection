@@ -11,12 +11,12 @@ router.post('/', function(req, res) {
     params.push(1);
     params.push(0);
     params.push(0);
-    params.push(1);
+    params.push(0);
     console.log(params);
 
 
     request({
-        url: "http://13.75.111.2:32783/score",
+        url: "http://ADSHOST:8888/score",
         method: "POST",
         headers: {
             "Content-Type": "application/json",
